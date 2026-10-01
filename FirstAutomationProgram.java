@@ -13,7 +13,7 @@ public class FirstAutomationProgram {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		
-		/*WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://selenium-prd.firebaseapp.com/");
 		
@@ -25,12 +25,14 @@ public class FirstAutomationProgram {
 		
 		WebElement loginButton = driver.findElement(By.xpath("//button[text()='Login to Account']"));
 		loginButton.click();
-		*/
 		
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--incognito");
-		options.addArguments("--start-maximized");
-		WebDriver driver = new ChromeDriver(options);
+		
+		/*
+		 * ChromeOptions options = new ChromeOptions();
+		 * options.addArguments("--incognito");
+		 * options.addArguments("--start-maximized"); WebDriver driver = new
+		 * ChromeDriver(options);
+		 
 		
 		driver.get("https://selenium-prd.firebaseapp.com/");
 		
@@ -43,7 +45,7 @@ public class FirstAutomationProgram {
 		pwd.sendKeys("admin123");
 		Thread.sleep(3000);
 		WebElement loginButton = driver.findElement(By.xpath("//button[text()='Login to Account']"));
-		loginButton.click();
+		loginButton.click();*/
 		Thread.sleep(3000);
 		driver.quit();
 
